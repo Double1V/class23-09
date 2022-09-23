@@ -27,3 +27,28 @@ My fav solution
     
     
 ## kata task2
+
+[Task Link](https://www.codewars.com/kata/542c0f198e077084c0000c2e)    
+My solution
+
+    public class FindDivisor {
+
+        public long numberOfDivisors(int n) {
+            int counter = 0;
+            for (int i = 1; i <= n; ++i) {
+                if (n % i == 0) {
+                    counter++;
+                }
+            }
+            return counter;
+        }
+    }
+    
+My fav solution
+
+       import java.util.stream.IntStream;
+        public class FindDivisor {
+            public long numberOfDivisors(int n) {
+            return IntStream.range(1, n+1).filter(i -> n%i==0).count();
+            }
+        }
