@@ -1,4 +1,4 @@
-public class FindDivisor {
+public class FindDivisor  {
 
     public long numberOfDivisors(int n) {
         int counter = 0;
